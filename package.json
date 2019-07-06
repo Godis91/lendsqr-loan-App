@@ -1,0 +1,26 @@
+{
+  "name": "lendsqr-loan-app",
+  "version": "1.0.0",
+  "description": "A Rest Api that allows customers to create profile (imagine basic user bio data) and apply for loans.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Godis91/lendsqr-loan-App.git"
+  },
+  "author": "Godisgreat Agu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Godis91/lendsqr-loan-App/issues"
+  },
+  "homepage": "https://github.com/Godis91/lendsqr-loan-App#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "moment": "^2.24.0",
+    "nodemon": "^1.19.1"
+  }
+}
