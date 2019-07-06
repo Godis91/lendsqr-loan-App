@@ -4,6 +4,8 @@
   "description": "A Rest Api that allows customers to create profile (imagine basic user bio data) and apply for loans.",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
