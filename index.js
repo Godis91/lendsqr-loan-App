@@ -9,7 +9,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // set up routes
 app.use('/users', require('./routes/user'));
-app.use('/loans', require('./routes/loan'));
+app.use('/loans', require('./routes/user'));
 
 const port = process.env.PORT || 5000;
 
