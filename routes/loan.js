@@ -35,4 +35,26 @@ router.post('/create', (req, res) => {
   res.send(currentUsers);
 });
 
+// Login route
+// @route is users/login
+router.post('/login', (req, res) => {
+  const { email, password } = req.body;
+
+  if (!email || !password) {
+    return res
+      .status(400)
+      .send({ msg: 'please input your email and password' });
+  }
+
+  const user = currentUsers.find(user => user.email === email);
+
+  if (!user) return res.status(404).send('User Does Not Exist');
+
+  if (user.password !== password) {
+    return res.status(400).send('Invalid login credentials');
+  }
+
+  res.status(200).send({ user });
+});
+
 module.exports = router;
